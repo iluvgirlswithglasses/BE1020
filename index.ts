@@ -46,7 +46,6 @@ app.get('/registrations', (req, res) => {
 });
 
 app.post('/registrations', async (req, res) => {
-  console.log(req.body);
   try {
     let hashedPwd: string = await bcryptjs.hash(req.body.password, 8);
     let acc = {
@@ -56,12 +55,6 @@ app.post('/registrations', async (req, res) => {
     };
     await db<Account>('account').insert(acc);
     res.status(200).send('user registered successfully');
-    //
-    console.log({
-      id: req.body.username,
-      display_name: req.body.display_name,
-      hashed_password: hashedPwd
-    });
   } catch (err) {
     console.log(err);
     res.status(502).send('something broke... wrong request body schema ?')
