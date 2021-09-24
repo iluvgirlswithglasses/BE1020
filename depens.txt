@@ -1,0 +1,17 @@
+-- install:
+npm init
+npm i express
+npm i -D typescript
+npm i ts-node sqlite3 knex bcryptjs
+npm i --save-dev @types/express
+npm i --save-dev @types/bcryptjs
+
+-- confs:
+./node_modules/typescript/bin/tsc --init
+npx knex init -x ts
+
+-- build:
+./node_modules/typescript/bin/tsc index.ts
+
+-- run:
+npx ts-node index.ts

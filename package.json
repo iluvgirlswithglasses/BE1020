@@ -1,0 +1,31 @@
+{
+  "name": "be1020",
+  "version": "1.0.0",
+  "description": "lets learn typescript and knex in one day",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx ts-node index.ts"
+  },
+  "author": "iluvgirlswithglasses",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "knex": "^0.95.11",
+    "sqlite3": "^5.0.2",
+    "ts-node": "^10.2.1"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/express": "^4.17.13",
+    "typescript": "^4.4.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iluvgirlswithglasses/BE1020.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iluvgirlswithglasses/BE1020/issues"
+  },
+  "homepage": "https://github.com/iluvgirlswithglasses/BE1020#readme"
+}
